@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  offer: MyString
+  email_subject: MyString
+  email_body: MyString
+  thanks: MyString
+  bitly: 
+
+two:
+  user_id: 1
+  offer: MyString
+  email_subject: MyString
+  email_body: MyString
+  thanks: MyString
+  bitly: 

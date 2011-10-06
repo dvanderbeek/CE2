@@ -1,0 +1,28 @@
+<p>
+  <b>Offer:</b>
+  <%= @campaign.offer %>
+</p>
+
+<p>
+  <b>Email subject:</b>
+  <%= @campaign.email_subject %>
+</p>
+
+<p>
+  <b>Email body:</b>
+  <%= @campaign.email_body %>
+</p>
+
+<p>
+  <b>Thanks:</b>
+  <%= @campaign.thanks %>
+</p>
+
+<p>
+  <b>Bitly:</b>
+  <%= @campaign.bitly %>
+</p>
+
+
+<%= link_to 'Edit', edit_campaign_path(@campaign) %> |
+<%= link_to 'Back', campaigns_path %>
