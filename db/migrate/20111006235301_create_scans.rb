@@ -5,7 +5,7 @@ class CreateScans < ActiveRecord::Migration
       t.string :email
       t.integer :num_scans
       t.integer :code
-      t.boolean :redeemed, :default => 0
+      t.boolean :redeemed, :default => false
 
       t.timestamps
     end
