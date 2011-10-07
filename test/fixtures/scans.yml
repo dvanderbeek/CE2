@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  campaign_id: 1
+  email: MyString
+  num_scans: 1
+  code: 1
+  redeemed: 
+
+two:
+  campaign_id: 1
+  email: MyString
+  num_scans: 1
+  code: 1
+  redeemed: 

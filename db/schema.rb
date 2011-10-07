@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111006044301) do
+ActiveRecord::Schema.define(:version => 20111006235301) do
 
   create_table "campaigns", :force => true do |t|
     t.integer  "user_id"
@@ -19,6 +19,16 @@ ActiveRecord::Schema.define(:version => 20111006044301) do
     t.string   "email_body"
     t.string   "thanks"
     t.string   "bitly"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "scans", :force => true do |t|
+    t.integer  "campaign_id"
+    t.string   "email"
+    t.integer  "num_scans"
+    t.integer  "code"
+    t.boolean  "redeemed",    :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

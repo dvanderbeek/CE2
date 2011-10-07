@@ -1,0 +1,10 @@
+<h3>Scans</h3>
+
+<% @campaigns.each do |campaign| %>
+	<h4><%= campaign.offer %></h4>
+	<% campaign.scans.each do |scan| %>
+		<%= scan.email %><br />
+	<% end %>
+<% end %>
+
+<%= link_to("New Scan", new_scan_path)%>

@@ -1,7 +1,9 @@
 CE2Rails::Application.routes.draw do
-  resources :campaigns
-
   devise_for :users
+  resources :campaigns
+  resources :scans
+  post 'scans/process'
+  
   
   get 'home/index'
   # The priority is based upon order of creation:
